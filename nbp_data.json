@@ -6,35 +6,43 @@
 		[
 			{
 				"currency":"bat (Tajlandia)",
-				"code":"THB","mid":0.1312
+				"code":"THB",
+				"mid":0.1312
 			},
 			{
 				"currency":"dolar amerykański",
-				"code":"USD","mid":4.3272
+				"code":"USD",
+				"mid":4.3272
 			},
 			{
 				"currency":"dolar australijski",
-				"code":"AUD","mid":3.0183
+				"code":"AUD",
+				"mid":3.0183
 			},
 			{
 				"currency":"dolar Hongkongu",
-				"code":"HKD","mid":0.5540
+				"code":"HKD",
+				"mid":0.5540
 			},
 			{
 				"currency":"dolar kanadyjski",
-				"code":"CAD","mid":3.2417
+				"code":"CAD",
+				"mid":3.2417
 			},
 			{
 				"currency":"dolar nowozelandzki",
-				"code":"NZD","mid":2.7666
+				"code":"NZD",
+				"mid":2.7666
 			},
 			{
 				"currency":"dolar singapurski",
-				"code":"SGD","mid":3.2741
+				"code":"SGD",
+				"mid":3.2741
 			},
 			{
 				"currency":"euro",
-				"code":"EUR","mid":4.6915
+				"code":"EUR",
+				"mid":4.6915
 			}
 		]
 	}
