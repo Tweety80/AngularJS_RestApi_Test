@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="lib\angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>AngularJS with RestAPI</title>
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="Mycontroller">
+      <div ng-repeat="data in myWelcome">
+      {{data.table}}
+      </div>
+    </div>
+  </body>
+</html>
