@@ -1,14 +1,17 @@
 (function functionName() {
-'use strict'; //wymusza koniecznośc deklarowania (typowania) zmiennych
+        'use strict'; //wymusza koniecznośc deklarowania (typowania) zmiennych
 
-angular.module('myapp', [])
+        var url ="http://10.56.123.135/asix/v1/variable/archive/raw?name=JO976KGW_OPC_PALA>
 
-.controller("Mycontroller",function($http,$rootScope){
-  $http.get("nbp_data.json").
-  then(function(response){
-    $rootScope.myWelcome = response.data;
-  });
-});
+        app = angular.module('myApp', [])
 
+                .controller('customersCtrl', function($scope, $http, $interval) {
+                        var refreshData = function() {
+                                $http.get(url).then(function (response) {
+                                        $scope.myData = response.data.samples;
+                                });
+                        };
+                        refreshData();
+                        $interval(refreshData,5000);
+        });
 })();
-//http://api.nbp.pl/api/exchangerates/tables/a/?format=json
