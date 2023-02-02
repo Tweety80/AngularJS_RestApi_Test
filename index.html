@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+</head>
+<script src="lib/angular.min.js"></script>
+<script src="app.js"></script>
 <body>
-
 <div ng-app="myApp" ng-controller="customersCtrl">
-
 <ul>
   <li ng-repeat="x in myData">
-    {{ x.t + ', ' + x.v }}
+    {{ x.t + ' -- ' + x.v.toFixed(3) }}
   </li>
 </ul>
-
 </div>
-
 <script>
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-  $http.get("ASIX_data.json").then(function (response) {
-      $scope.myData = response.data.samples;
-  });
-});
+let isoString = "2023-01-18T19:34:57Z";
+let date = new Date(isoString);
+let localTimeString = date.toLocaleString();
+console.log(localTimeString);
+let now = new Date();
+let offset = now.getTimezoneOffset();
+console.log(now);
+console.log(offset);
 </script>
-
 </body>
 </html>
